@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thalles Juan · Desenvolvedor</title>
+  <meta name="description" content="Portfólio de Thalles Juan: sistemas web para pequenos negócios com TypeScript, Next.js e PostgreSQL.">
+  <meta property="og:title" content="Thalles Juan · Desenvolvedor">
+  <meta property="og:description" content="Sistemas web para pequenos negócios com TypeScript, Next.js e PostgreSQL.">
+  <meta property="og:image" content="https://juan1992tj1-prog.github.io/img/sousa-painel.png">
+  <meta name="theme-color" content="#14161a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2314161a'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='30' fill='%23f2b33d'>TJ</text></svg>">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="largura topo-conteudo">
+      <a href="#inicio" class="logo" aria-label="Início">TJ<span>.</span></a>
+      <nav aria-label="Seções">
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero largura">
+      <p class="sobretitulo">Olá, eu sou o</p>
+      <h1>Thalles Juan</h1>
+      <p class="subtitulo">
+        Desenvolvedor em formação. Transformo a rotina de pequenos negócios
+        (<em>estoque, caixa, compras</em>) em sistemas web simples de usar e bem testados.
+      </p>
+      <div class="acoes">
+        <a class="botao principal" href="#projetos">Ver projetos</a>
+        <a class="botao" href="https://github.com/juan1992tj1-prog" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <ul class="pilha" aria-label="Tecnologias principais">
+        <li>TypeScript</li><li>React</li><li>Next.js</li><li>Node.js</li><li>PostgreSQL</li><li>Tailwind CSS</li><li>Docker</li><li>C</li>
+      </ul>
+    </section>
+
+    <section id="projetos" class="largura secao">
+      <h2 class="titulo-secao"><span>01</span> Projetos</h2>
+
+      <article class="projeto">
+        <div class="projeto-texto">
+          <p class="etiqueta">Sistema web · Varejo</p>
+          <h3>Distribuidora Sousa</h3>
+          <p>
+            Sistema de estoque e balcão para uma distribuidora de bebidas, pensado para rodar num mini-PC
+            dentro da loja e ser usado no caixa e no celular.
+          </p>
+          <ul class="destaques">
+            <li><b>Estoque por lote e validade (FEFO):</b> sai primeiro o que vence primeiro; vencido nunca é vendido.</li>
+            <li><b>Venda no balcão</b> com leitor de código de barras e QR, troco, Pix, cartão e fiado.</li>
+            <li><b>Caixa com fechamento cego:</b> o operador conta sem ver o esperado; o gerente vê sobra ou falta.</li>
+            <li><b>Importação da NF-e</b> do fornecedor com conferência cega e comparação nota × contado.</li>
+            <li><b>Sugestão de compra</b> pelo giro, arredondada na caixa e separada por fornecedor.</li>
+            <li><b>Regras testadas</b> com Vitest num PostgreSQL em memória e verificadas a cada envio (GitHub Actions).</li>
+          </ul>
+          <ul class="tags" aria-label="Tecnologias do projeto">
+            <li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Drizzle ORM</li><li>Tailwind</li><li>Docker</li><li>Vitest</li>
+          </ul>
+          <div class="acoes">
+            <a class="botao principal" id="link-demo" href="#" target="_blank" rel="noopener" hidden>Abrir a demo</a>
+            <a class="botao" href="https://github.com/juan1992tj1-prog/distribuidora-sousa" target="_blank" rel="noopener">Ver o código</a>
+          </div>
+          <p class="nota" id="nota-demo" hidden>Demo com dados fictícios, reiniciada todo dia. Entre com um clique em qualquer perfil.</p>
+        </div>
+
+        <figure class="projeto-imagem">
+          <img src="img/sousa-painel.png" alt="Painel do sistema Distribuidora Sousa com vendas do dia, produtos para repor, alertas de validade e mais vendidos" width="1440" height="900" loading="lazy">
+        </figure>
+
+        <div class="galeria">
+          <figure><img src="img/sousa-pdv.png" alt="Tela de venda com carrinho e confirmação de idade" loading="lazy"><figcaption>Venda no balcão</figcaption></figure>
+          <figure><img src="img/sousa-caixa.png" alt="Relatório de fechamento de caixa com esperado, contado e sobra" loading="lazy"><figcaption>Fechamento de caixa</figcaption></figure>
+          <figure><img src="img/sousa-compras.png" alt="Sugestão de compra agrupada por fornecedor" loading="lazy"><figcaption>Sugestão de compra</figcaption></figure>
+        </div>
+      </article>
+
+      <p class="em-breve">Novos projetos em construção.</p>
+    </section>
+
+    <section id="sobre" class="largura secao sobre">
+      <h2 class="titulo-secao"><span>02</span> Sobre</h2>
+      <div class="sobre-grade">
+        <div>
+          <p>
+            Gosto de entender como um negócio funciona de verdade antes de escrever código: quem usa,
+            onde trava e o que não pode dar errado. Num balcão, isso significa telas rápidas, poucos cliques
+            e regras que protegem o dinheiro e o estoque.
+          </p>
+          <p>
+            Estou aprofundando meus estudos em <b>TypeScript</b>, <b>React/Next.js</b>, <b>bancos de dados relacionais</b>
+            e <b>C</b>, sempre com foco em código testado e fácil de manter.
+          </p>
+        </div>
+        <ul class="valores">
+          <li><b>Regras claras</b><span>Lógica de negócio separada da tela e coberta por testes.</span></li>
+          <li><b>Feito para quem usa</b><span>Interfaces pensadas para o balcão, o caixa e o celular.</span></li>
+          <li><b>Seguro por padrão</b><span>Permissões por perfil, auditoria e backup.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="largura secao contato">
+      <h2 class="titulo-secao"><span>03</span> Contato</h2>
+      <p>Aberto a oportunidades e trocas de conhecimento. O melhor caminho é pelo GitHub.</p>
+      <a class="botao principal" href="https://github.com/juan1992tj1-prog" target="_blank" rel="noopener">github.com/juan1992tj1-prog</a>
+    </section>
+  </main>
+
+  <footer class="largura rodape">
+    <p>© <span id="ano">2026</span> Thalles Juan · Feito à mão com HTML e CSS.</p>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+    // link da demo online: preencha aqui quando ela estiver no ar
+    const DEMO = "";
+    if (DEMO) {
+      const a = document.getElementById("link-demo");
+      a.href = DEMO;
+      a.hidden = false;
+      document.getElementById("nota-demo").hidden = false;
+    }
+  </script>
+</body>
+</html>
